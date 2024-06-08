@@ -21,10 +21,20 @@
 // 2 .Create getNotes function that returns "Your notes.."
 // 3. Export getNotes function 
 // 4. from app.js load in and call the function printing message to console
-const validator = require('validator')
-const getNotes = require('./notes')
-const msg = getNotes()
+// const chalk = require('chalk')
+// const getNotes = require('./notes')
+// const msg = getNotes()
 
+// console.log(msg);
+
+// const greenMsg = chalk.green('Success!')
+// console.log(greenMsg)
+
+import chalk from 'chalk';
+import getNotes from './notes.js';
+
+const msg = getNotes();
 console.log(msg);
 
-console.log(validator.isURL('https/mead.io'));
+const greenMsg = chalk.green('Success!');
+console.log(greenMsg);
