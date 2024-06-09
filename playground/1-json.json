@@ -1,0 +1,10 @@
+// {"title":"Ego is the enemy","author":"Ryan Holiday"}
+
+{
+    "name": "Andrew",
+    "planet": "Earth",
+    "age": 27
+}
+
+const dataObject = JSON.parse(jsonString);
+console.log(dataObject);
